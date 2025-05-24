@@ -585,6 +585,7 @@
 :root, [data-bs-theme="light"] {
     --bd-purple: #4c0bce;
     --bd-violet: #712cf9;
+	--bd-rws: #0064ff;
     --bd-accent: #ffe484;
     --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 	--bd-rws-rgb: 0, 100, 255;
@@ -592,8 +593,9 @@
     --bd-pink-rgb: 214, 51, 132;
     --bd-teal-rgb: 32, 201, 151;
     --bd-violet-bg: var(--bd-violet);
-    --bd-toc-color: var(--bd-violet);
-    --bd-sidebar-link-bg: rgba(var(--bd-violet-rgb), .1);
+	--bd-rws-bg: var(--bd-rws);
+    --bd-toc-color: var(--bd-rws);
+    --bd-sidebar-link-bg: rgba(var(--bd-rws-rgb), .1);
     --bd-callout-link: 10, 88, 202;
     --bd-callout-code-color: #ab296a;
     --bd-pre-bg: var(--bs-tertiary-bg)
@@ -602,6 +604,8 @@
 [data-bs-theme="dark"] {
     --bd-violet: #9461fb;
     --bd-violet-bg: #712cf9;
+    --bd-rws: #0064ff;
+    --bd-rws-bg: #0064ff;
     --bd-toc-color: var(--bs-emphasis-color);
     --bd-sidebar-link-bg: rgba(84, 33, 187, .5);
     --bd-callout-link: 110, 168, 254;
@@ -691,7 +695,7 @@
 }
 
 .bd-navbar .offcanvas-lg {
-    background-color: var(--bd-violet-bg);
+    background-color: var(--bd-rws-bg);
     border-left:0
 }
 
@@ -709,8 +713,8 @@
     --bs-dropdown-min-width: 12rem;
     --bs-dropdown-padding-x: .25rem;
     --bs-dropdown-padding-y: .25rem;
-    --bs-dropdown-link-hover-bg: rgba(var(--bd-violet-rgb), .1);
-    --bs-dropdown-link-active-bg: rgba(var(--bd-violet-rgb), 1);
+    --bs-dropdown-link-hover-bg: rgba(var(--bd-rws-rgb), .1);
+    --bs-dropdown-link-active-bg: rgba(var(--bd-rws-rgb), 1);
     --bs-dropdown-font-size: .875rem;
     font-size: .875rem;
     border-radius: .5rem;
@@ -748,7 +752,7 @@
 .bd-masthead {
     --bd-pink-rgb: 214, 51, 132;
     padding: 3rem 0;
-    background-image:linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%)
+    background-image:linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-rws-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%)
 }
 
 .bd-masthead h1 {
